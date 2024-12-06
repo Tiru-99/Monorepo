@@ -1,0 +1,14 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "lib": ["ES2015"],
+    "rootDir": "./src",          // This specifies where the source files are.
+    "outDir": "./dist",          // This specifies where to output the compiled files.
+    "declaration": true,         // Ensures declaration files (.d.ts) are generated.
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "dist"],  
+  "include": ["src/**/*"]
+}
